@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Техпортал СКУФ / Панель событий</title>
+    <meta name="description" content="Самая лучшая компания">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:regular,500" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/normalise.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+                <div class="header__container container-fluid">
+                    <div class="header__left">
+                        <button class="menu__button" onclick="myFunction()"><img src="img/menu-icon.svg" alt="Menu"></button>
+                        <nav aria-label="breadcrumb__nav">
+                            <ul class="breadcrumb">
+                                <li class="breadcrumb__item"><a href="#">Техпортал СКУФ</a></li>
+                                <li class="breadcrumb__item" aria-current="page">Панель событий</li>
+                            </ul>
+                        </nav>
+                    </div>
+                <div class="header__right">
+                    <form class="header__search-wrap" action="http://.../search/" target="_self">
+                        <input class="header__search" type="text" placeholder="Поиск" name="text" required autocomplete="on" target="touch">
+                        <input class="header__search-icon" type="image" src="img/search-icon.svg"/>
+                        <span><img class="header__arrow-icon" src="img/arrow_drop_down-icon.svg" alt="Arrow"></span>
+                        <select class="header__select-person">
+                            <option value="Платонова Людмила">Платонова Людмила</option>
+                            <option value="Платонова Ольга">Платонова Ольга</option>
+                            <option value="Платонова Руслана">Платонова Руслана</option>
+                        </select>
+                        <span class="header__select-arrow-icon"><img src="img/arrow_drop_down-icon.svg" alt="Arrow"></span>
+                    </form>
+                    <div class="header__button-wrap">
+                        <button class="search__button"><img src="img/search-icon.svg" alt="Icon"></button>
+                        <button class="select-person__button"><img class="user-profile" src="img/blank-user-profile.svg"/></button>
+                        <button class="layer__button"><img src="img/layer-icon.svg" alt="Icon"></button>
+                        <button class="fullscreen__button"><img src="img/fullscreen-icon.svg" alt="Icon"></button>
+                        <button class="power-settings__button"><img src="img/power-settings-icon.svg" alt="Icon"></button>
+                        
+                    </div>
+                </div>
+
+                </div>
+    </header>
+
+<div class="basic__container container-fluid">
+    <aside class="sidebar" id="myDropdown">
+        <section class="sidebar__section">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item first">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button no-arrow-down" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <img src="img/sidebar-menu_icon.svg" alt="menu">
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                        <button class="aside-menu__button" title="Description">
+                            Inc
+                        </button>
+                        <button class="aside-menu__button" title="Description">
+                            Tas
+                        </button>
+                        <button class="aside-menu__button" title="Description">
+                            Crq
+                        </button>
+                        <button class="aside-menu__button" title="Description">
+                            Pbi
+                        </button>
+                        <button class="aside-menu__button" title="Description">
+                            Rlm
+                        </button>
+                        <button class="aside-menu__button" title="Панель событий">
+                            Evt
+                        </button>
+                        <button class="aside-menu__button" title="Description">
+                            Dev
+                        </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item second">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button no-arrow-down collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <img src="img/analytics_icon.svg" alt="analytics">
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                        ##2
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item third">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button no-arrow-down collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <img src="img/work_icon.svg" alt="o">
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                        ##3
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item fourth">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button no-arrow-down collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            <img src="img/allerts_icon.svg" alt="allerts">
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                        ##4
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+    </aside>
+    <main class="main__container">
+        <section class="events__section">
+            <div class="event-panel-filters__wrapper">
+                <h2>Фильтры панели событий</h2>
+                <div class="status__wrap">
+                    <h5 class="status-wrap__title">Статус</h5>
+                    <label class="check light-blue"><input class="check__input" type="checkbox" checked><span class="check__box"></span>Open<span class="number">2586</span></label>
+                    <label class="check light-blue"><input class="check__input" type="checkbox" checked><span class="check__box"></span>Closed<span class="number">712</span></label>
+                    <label class="check disabled"><input class="check__input" type="checkbox" disabled><span class="check__box"></span>Ack<span class="number">2586</span></label>
+                    <label class="check light-blue"><input class="check__input" type="checkbox" checked><span class="check__box"></span>Blackout<span class="number">128</span></label>
+                </div>
+                <div class="criticality__wrap">
+                    <h5 class="criticality-wrap__title">Критичность</h5>
+                    <label class="check critical"><input class="check__input" type="checkbox" checked><span class="check__box"></span>Critical<span class="number">250</span></label>
+                    <label class="check major"><input class="check__input" type="checkbox" checked><span class="check__box"></span>Major<span class="number">65</span></label>
+                    <label class="check minor"><input class="check__input" type="checkbox" checked><span class="check__box"></span>Minor<span class="number">320</span></label>
+                    <label class="check warning"><input class="check__input" type="checkbox" checked><span class="check__box"></span>Warning<span class="number">320</span></label>
+                    <label class="check light-blue"><input class="check__input" type="checkbox" checked><span class="check__box"></span>Information<span class="number">320</span></label>
+                    <label class="check okay"><input class="check__input" type="checkbox" checked><span class="check__box"></span>Ok<span class="number">1700</span></label>
+                </div>
+            </div>
+            <div class="system-filters__wrapper">
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne"> 
+                                <span class="system-filters__header"> 
+                                    <label class="check1"><input class="check__input1" type="checkbox" checked><span class="check__box1"></span>Фильтрация по системам</label>
+                                    <span><a class="choose-systems">Выбрать системы</a><span>120/280</span></span>
+                                </span>
+                                <img class="vertical_line" src="img/vertical_line.svg" alt="|"> 
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                            <div class="accordion-body">
+                                <div class="system-filters__wrap">
+                                    <label class="check light-blue"><input class="check__input" type="checkbox" checked><span class="check__box"></span>1С предприятие<span class="number">320</span></label>
+                                    <label class="check major"><input class="check__input" type="checkbox" checked><span class="check__box"></span>07.мониторинг<span class="number">320</span></label>
+                                    <label class="check okay"><input class="check__input" type="checkbox" checked><span class="check__box"></span>Акэос<span class="number">320</span></label>
+                                    <label class="check disabled"><input class="check__input" type="checkbox" checked><span class="check__box"></span>Скуф автотест<span class="number">320</span></label>
+                                    <label class="check warning"><input class="check__input" type="checkbox" checked><span class="check__box"></span>Телигент<span class="number">320</span></label>
+                                    <label class="check warning"><input class="check__input" type="checkbox" checked><span class="check__box"></span>Фабуза<span class="number">320</span></label>
+                                    <label class="check warning"><input class="check__input" type="checkbox" checked><span class="check__box"></span>1С предприятие<span class="number">320</span></label>
+                                    <label class="check okay"><input class="check__input" type="checkbox" checked><span class="check__box"></span>1С предприятие<span class="number">320</span></label>
+                                    <label class="check major"><input class="check__input" type="checkbox" checked><span class="check__box"></span>1С предприятие<span class="number">320</span></label>
+                                    <label class="check critical"><input class="check__input" type="checkbox" checked><span class="check__box"></span>1С предприятие<span class="number">320</span></label>
+                                    <label class="check critical"><input class="check__input" type="checkbox" checked><span class="check__box"></span>1С предприятие<span class="number">320</span></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tabs-content__wrapper">
+                <div class="tabs">
+                    <ul class="tabs__caption">
+                        <li class="button tablinks">Описание и решение</li>
+                        <li class="button tablinks">Пользователь</li>
+                        <li class="button tablinks">СМЭВ</li>
+                        <li class="button tablinks">Связи</li>
+                        <li class="button tablinks">Задачи</li>
+                        <li class="button tablinks">Трудозатраты</li>
+                        <li class="button tablinks">Дата/система</li>
+                        <li class="button tablinks">События</li>
+                    </ul>
+                    <div class="tabs__content">
+                        вкладка1
+                    </div>
+                    <div class="tabs__content">
+                        вкладка2
+                    </div>
+                    <div class="tabs__content">
+                        вкладка3
+                    </div>
+                    <div class="tabs__content">
+                        вкладка4
+                    </div>
+                    <div class="tabs__content">
+                        вкладка5
+                    </div>
+                    <div class="tabs__content">
+                        вкладка6
+                    </div>
+                    <div class="tabs__content">
+                        вкладка7
+                    </div>
+                    <div class="tabs__content active">
+                        <div class="events__wrap">
+                            <div class="container-fluid">
+                                <div class="row events-wrap__top">
+                                    <div class="col-lg-2 col-md-2 d-flex align-items-center events-blue__text">
+                                        Выделено 1 событие
+                                    </div>
+                                    <div class="col-lg-4 col-md-3 d-flex align-items-center">
+                                        <form class="events__search-wrap" action="http://.../search/" target="_self">
+                                            <input class="events__search" type="text" placeholder="Поиск" name="text" required autocomplete="on" target="touch">
+                                            <input class="events__search-icon" type="image" src="img/dark-search.svg"/>
+                                            <span><img class="events__arrow-icon" src="img/arrow-down-gray.svg" alt="Arrow"></span>
+                                        </form>
+                                    </div>
+                                    <div class="col-lg-6 col-md-7 d-flex flex-row justify-content-around align-items-center ">
+                                            <img src="img/first-gray_icon.svg" alt="icon1" class="icon">
+                                            <img src="img/second-gray_icon.svg" alt="icon2" class="icon">
+                                            <img src="img/events-vertical-line.svg" alt="|">
+                                            <img src="img/third-gray_icon.svg" alt="icon3" class="icon">
+                                            <img src="img/fourth-gray_icon.svg" alt="icon4" class="icon">
+                                            <img src="img/fifth-gray_icon.svg" alt="icon5" class="icon">
+                                            <img src="img/sixth-gray_icon.svg" alt="icon6" class="icon">
+                                            <img src="img/seventh-gray_icon.svg" alt="icon7" class="icon">
+                                            <img src="img/events-vertical-line.svg" alt="|">
+                                            <img src="img/CSV_icon.svg" alt="icon8" class="icon">
+                                            <img src="img/JSON_icon.svg" alt="icon9" class="icon">
+                                            <img src="img/events-vertical-line.svg" alt="|">
+                                            <img src="img/fullscreen-gray_icon.svg" alt="icon10" class="icon">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container-fluid events-wrap__basic">
+                                <div class="row">
+                                    <table class="table">
+                                        <thead>
+                                          <tr>
+                                            <th scope="col"><label class="check2"><input class="check__input2" type="checkbox" checked><span class="check__box2"></span></label></th>
+                                            <th scope="col">Статус</th>
+                                            <th scope="col"><img src="img/crit_icon.svg" alt=""></th>
+                                            <th scope="col"><img src="img/prio_icon.svg" alt=""></th>
+                                            <th scope="col">Дата</th>
+                                            <th scope="col">Категория</th>
+                                            <th scope="col"><nobr>№ инцидента</nobr></th>
+                                            <th scope="col">Сервис</th>
+                                            <th scope="col">Текст события</th>
+                                            <th scope="col">Хост</th>
+                                            <th scope="col">Заглавие</th>
+                                            <th scope="col">Заглавие</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr class="1 table-row">
+                                            <th scope="row"><label class="check1"><input class="check__input1" type="checkbox"><span class="check__box1"></span></label></th>
+                                            <td>BLK</td>
+                                            <td><img src="img/blue-circle_icon.svg" alt=""></td>
+                                            <td>4</td>
+                                            <td><nobr>26.09.18, 19:35</nobr></td>
+                                            <td>Oxygen</td>
+                                            <td class="events-blue__text">22468925215640</td>
+                                            <td><nobr>СКУФ автотест</nobr></td>
+                                            <td><nobr>Устройство не отвечает</nobr></td>
+                                            <td>pk4infra01.k4.egov.local</td>
+                                            <td>Текст</td>
+                                            <td>Текст</td>
+                                                
+                                          </tr>
+                                          <tr class="2 table-row">
+                                            <th scope="row"><label class="check1"><input class="check__input1" type="checkbox" checked><span class="check__box1"></span></label></th>
+                                            <td>OPEN</td>
+                                            <td><img src="img/warning-label_important.svg" alt=""></td>
+                                            <td>3</td>
+                                            <td><nobr>24.09.18, 16:00</nobr></td>
+                                            <td>Oxygen</td>
+                                            <td class="events-blue__text">22468925215640</td>
+                                            <td><nobr>1C Предприятие</nobr></td>
+                                            <td><nobr>Производительность снижена, требуется техобслуживание</nobr></td>
+                                            <td>p00esiadb02.00.egov.local</td>
+                                            <td>Текст</td>
+                                            <td>Текст</td>
+                                          </tr>
+                                          <tr class="3 table-row">
+                                            <th scope="row"><label class="check1"><input class="check__input1" type="checkbox"><span class="check__box1"></span></label></th>
+                                            <td>OPEN</td>
+                                            <td><img src="img/green-circle_icon.svg" alt=""></td>
+                                            <td>5</td>
+                                            <td><nobr>23.09.18, 08:42</nobr></td>
+                                            <td>Oxygen</td>
+                                            <td class="events-blue__text">22468925215640</td>
+                                            <td>Телигент</td>
+                                            <td><nobr>Соединение восстановлено</nobr></td>
+                                            <td>p72sirapp02.k5.egov.local</td>
+                                            <td>Текст</td>
+                                            <td>Текст</td>
+                                          </tr>
+                                          <tr class="4 table-row">
+                                            <th scope="row"><label class="check1"><input class="check__input1" type="checkbox"><span class="check__box1"></span></label></th>
+                                            <td>OPEN</td>
+                                            <td><img src="img/minor-label_important.svg" alt=""></td>
+                                            <td>3</td>
+                                            <td><nobr>16.09.18, 14:05</nobr></td>
+                                            <td>Oxygen</td>
+                                            <td class="events-blue__text">22468925215640</td>
+                                            <td><nobr>1C Предприятие</nobr></td>
+                                            <td><nobr>Ошибка соединения</nobr></td>
+                                            <td>pk5nfs01.k5.egov.local</td>
+                                            <td>Текст</td>
+                                            <td>Текст</td>
+                                          </tr>
+                                          <tr class="5 table-row">
+                                            <th scope="row"><label class="check1"><input class="check__input1" type="checkbox"><span class="check__box1"></span></label></th>
+                                            <td>OPEN</td>
+                                            <td><img src="img/brown-circle_icon.svg" alt=""></td>
+                                            <td>3</td>
+                                            <td>14.09.18, 23:40</td>
+                                            <td>Oxygen</td>
+                                            <td class="events-blue__text">22468925215640</td>
+                                            <td>Фабуза</td>
+                                            <td>Неожиданное завершение работы критического процесса</td>
+                                            <td>p00esnsi2tnsiapp01</td>
+                                            <td>Текст</td>
+                                            <td>Текст</td>
+                                          </tr>
+                                          <tr class="6 table-row">
+                                            <th scope="row"><label class="check1"><input class="check__input1" type="checkbox"><span class="check__box1"></span></label></th>
+                                            <td>ACK</td>
+                                            <td><img src="img/critical-label_important.svg" alt=""></td>
+                                            <td>1</td>
+                                            <td>14.09.18, 10:00</td>
+                                            <td>Oxygen</td>
+                                            <td class="events-blue__text">22468925215640</td>
+                                            <td>Телигент</td>
+                                            <td>Сервер не отвечает более 30 минут</td>
+                                            <td>p00pgudb03.00.egov.local</td>
+                                            <td>Текст</td>
+                                            <td>Текст</td>
+                                          </tr>
+                                          <tr class="7 table-row">
+                                            <th scope="row"><label class="check1"><input class="check__input1" type="checkbox"><span class="check__box1"></span></label></th>
+                                            <td>BLK</td>
+                                            <td><img src="img/major-label_important.svg" alt=""></td>
+                                            <td>2</td>
+                                            <td>12.09.18, 14:52</td>
+                                            <td>Oxygen</td>
+                                            <td class="events-blue__text">22468925215640</td>
+                                            <td>1C Предприятие</td>
+                                            <td>502 Bad Gateway</td>
+                                            <td>gosuslugi-release</td>
+                                            <td>Текст</td>
+                                            <td>Текст</td>
+                                          </tr>
+                                          <tr class="8 table-row">
+                                            <th scope="row"><label class="check1"><input class="check__input1" type="checkbox" disabled><span class="check__box1"></span></label></th>
+                                            <!-- <th scope="row"><div class="spinner-border spinner-border-sm text-secondary" role="status"></div> -->
+                                            <td>OPEN</td>
+                                            <td><img src="img/gray-circle_icon.svg" alt=""></td>
+                                            <td>5</td>
+                                            <td>08.09.18, 07:37</td>
+                                            <td>Oxygen</td>
+                                            <td class="events-blue__text">56789543436689</td>
+                                            <td>СКУФ автотест</td>
+                                            <td>Техобслуживание запланировано</td>
+                                            <td>p72sirapp01.k5.egov.local</td>
+                                            <td>Текст</td>
+                                            <td>Текст</td>
+                                          </tr>
+                                          <tr class="9 table-row">
+                                            <th scope="row"><label class="check1"><input class="check__input1" type="checkbox"><span class="check__box1"></span></label></th>
+                                            <td>CLO</td>
+                                            <td><img src="img/green-circle_icon.svg" alt=""></td>
+                                            <td>4</td>
+                                            <td>08.09.18, 12:35</td>
+                                            <td>Oxygen</td>
+                                            <td class="events-blue__text">22468925215640</td>
+                                            <td>1C Предприятие</td>
+                                            <td>Событие успешно обработано</td>
+                                            <td>p02sirapp16.k2.egov.local</td>
+                                            <td>Текст</td>
+                                            <td>Текст</td>
+                                          </tr>
+                                          <tr class="10 table-row">
+                                            <th scope="row"><label class="check1"><input class="check__input1" type="checkbox"><span class="check__box1"></span></label></th>
+                                            <td>OPEN</td>
+                                            <td><img src="img/green-circle_icon.svg" alt=""></td>
+                                            <td>5</td>
+                                            <td>04.09.18, 18:00</td>
+                                            <td>Oxygen</td>
+                                            <td class="events-blue__text">22468925215640</td>
+                                            <td>1C Предприятие</td>
+                                            <td>Работа приложения восстановлена</td>
+                                            <td>gosuslugi-test</td>
+                                            <td>Текст</td>
+                                            <td>Текст</td>
+                                          </tr>
+                                          <tr class="11 table-row">
+                                            <th scope="row"><label class="check1"><input class="check__input1" type="checkbox"><span class="check__box1"></span></label></th>
+                                            <td>BLK</td>
+                                            <td><img src="img/green-circle_icon.svg" alt=""></td>
+                                            <td>4</td>
+                                            <td>26.09.18, 19:35</td>
+                                            <td>Oxygen</td>
+                                            <td class="events-blue__text">22468925215640</td>
+                                            <td>СКУФ автотест</td>
+                                            <td>Устройство не отвечает</td>
+                                            <td>pk4infra01.k4.egov.local</td>
+                                            <td>Текст</td>
+                                            <td>Текст</td>
+                                          </tr>
+                                          <tr class="12 table-row">
+                                            <th scope="row"><label class="check1"><input class="check__input1" type="checkbox"><span class="check__box1"></span></label></th>
+                                            <td>BLK</td>
+                                            <td><img src="img/green-circle_icon.svg" alt=""></td>
+                                            <td>4</td>
+                                            <td>26.09.18, 19:35</td>
+                                            <td>Oxygen</td>
+                                            <td class="events-blue__text">22468925215640</td>
+                                            <td>СКУФ автотест</td>
+                                            <td>Устройство не отвечает</td>
+                                            <td>pk4infra01.k4.egov.local</td>
+                                            <td>Текст</td>
+                                            <td>Текст</td>
+                                          </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="container-fluid events-wrap__bottom">
+                                <div class="row d-flex flex-row justify-content-between align-items-center">
+                                    <div class="col-3">
+                                        <p>23 активных события</p>
+                                    </div>
+                                    <div class="col-3 d-flex justify-content-end">
+                                        <span>100 из 2472</span> 
+                                        <button class="vertical-points"><img src="img/right_icon.svg" alt="points"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-fluid ps-0">
+                            <div class="row buttons__wrapper">
+                                <div class="col-3 ps-0">
+                                    <button class="change-status">Изменить статус</button>
+                                </div>
+                                <div class="col-3 d-flex flex-row justify-content-around">
+                                    <button class="save">Сохранить</button>
+                                    <button class="cancel">Отмена</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                     
+                </div>        
+
+            </div>
+            <div class="incident-details__wrapper">
+                <div class="container-fluid">
+                    <h2 class="incident-details__title">Детали инцидента</h2>
+                    <div class="row">
+                        <label class="col-9 form-label topic-input" for="">Тема<br><input class="topic-input" type="text" placeholder="Укажите тему" value="Оплата начислений"></label><br>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="row d-flex flex-row justify-content-between">
+                        <div class="col-3 d-flex flex-column incident-details__col">
+                            <label class="form-label" for="">Регион<br>
+                                <select class="">
+                                    <option value="Платонова Людмила">00_Федеральный уровень</option>
+                                    <option value="Платонова Ольга">01_Федеральный уровень</option>
+                                    <option value="Платонова Руслана">02_Федеральный уровень</option>
+                                </select>
+                            </label>
+                            <label class="form-label" for="">Сервис<br>
+                                <select class="">
+                                    <option value="Платонова Людмила">Не определено</option>
+                                    <option value="Платонова Ольга">Не определено1</option>
+                                    <option value="Платонова Руслана">Не определено2</option>
+                                </select>
+                            </label>
+                            <label class="form-label" for="">Тип запроса<br>
+                                <select class="">
+                                    <option value="Платонова Людмила">Инцидент</option>
+                                    <option value="Платонова Ольга">Инцидент1</option>
+                                    <option value="Платонова Руслана">Инцидент2</option>
+                                </select>
+                            </label>
+                            <label class="form-label" for="">Приоритет<br>
+                                <select class="">
+                                    <option value="Платонова Людмила">1 - Критичный</option>
+                                    <option value="Платонова Ольга">Платонова Ольга</option>
+                                    <option value="Платонова Руслана">Платонова Руслана</option>
+                                </select>
+                            </label>
+                            <label class="form-label" for="">Срочность<br>
+                                <select class="">
+                                    <option value="Платонова Людмила">Обычная</option>
+                                    <option value="Платонова Ольга">Обычная1</option>
+                                    <option value="Платонова Руслана">Обычная2</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="col-3 d-flex flex-column incident-details__col">
+                                <label class="form-label" for="">Статус<br>
+                                    <input name="textfield" type="text" value="Выполняется">
+                                </label>
+                                <label class="form-label" for="">Причина состояния<br>
+                                    <select class="">
+                                        <option value="Платонова Людмила">Запрошена ирфомация у инициатора</option>
+                                        <option value="Платонова Ольга">Платонова Ольга</option>
+                                        <option value="Платонова Руслана">Платонова Руслана</option>
+                                    </select>
+                                </label>
+                                <label class="form-label" for="">Уровень 2<br>
+                                    <select class="">
+                                        <option value="Платонова Людмила">ЕСИА</option>
+                                        <option value="Платонова Ольга">Платонова Ольга</option>
+                                        <option value="Платонова Руслана">Платонова Руслана</option>
+                                    </select>
+                                </label>
+                                <label class="form-label" for="">Уровень 3<br>
+                                    <select class="">
+                                        <option value="Платонова Людмила">АРМ ЦО</option>
+                                        <option value="Платонова Ольга">Платонова Ольга</option>
+                                        <option value="Платонова Руслана">Платонова Руслана</option>
+                                    </select>
+                                </label>
+                                <label class="checkbox">
+                                    <input type="checkbox">
+                                    <span class="switch-span">Ведомственная ИС</span>
+                                </label>
+                        </div>
+                        <div class="col-3 d-flex flex-column incident-details__col">
+                                <label class="form-label" for="">Назначенная группа / Исполнитель<br>
+                                    <textarea class="performer-input" type="text" name="textfield">Управление уровнем сервиса Платонова Людмила И</textarea>
+                                </label>
+                                <label class="form-label" for="">Группа владельца<br>
+                                    <input name="textfield" type="text" value="Управление уровнем сервиса">
+                                </label>
+                                <label class="form-label" for="">Инициатор<br>
+                                    <select class="">
+                                        <option value="Платонова Людмила">Иванов А. А.</option>
+                                        <option value="Платонова Ольга">Платонова Ольга</option>
+                                        <option value="Платонова Руслана">Платонова Руслана</option>
+                                    </select>
+                                </label>
+                                <label class="form-label" for="">Востановление<br>
+                                    <select disabled>
+                                        <option  value="Выберите значение" disabled selected>Выберите значение</option>
+                                        <option value="Платонова Ольга">Платонова Ольга</option>
+                                        <option value="Платонова Руслана">Платонова Руслана</option>
+                                    </select>
+                                </label>
+                                <label class="checkbox">
+                                    <input type="checkbox" checked>
+                                    <span class="switch-span">Повышен приоритет</span>
+                                </label>
+                        </div>
+                        <div class="col-3 d-flex flex-column time__wraper">
+                            <div class="time-wrapper__content">
+                                <div>
+                                    <h6>Дата создания</h6>
+                                    <time>12.05.2018 14:45:23</time>
+                                </div>
+                                <div>
+                                    <h6>Целевое время решения</h6>
+                                    <time class="yellow-time">12.09.2018 14:45:23</time>
+                                </div>
+                                <div>
+                                    <h6>Целевое время востановления</h6>
+                                    <time class="red-time">12.09.2018 14:45:23</time>
+                                </div>
+                                <div>
+                                    <h6>Дата создания</h6>
+                                    <time>12.09.2018 14:45:23</time>
+                                </div>
+                                <div>
+                                    <h6>Дата создания</h6>
+                                    <time>12.09.2018 14:45:23</time>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>  
+                </div>
+            </div>
+
+            <div class="details-bottom__wrapper">
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingTwo">
+                            <div class="accordion-body">
+                                <div class="details-bottom">
+                                    <div class="details-bottom__wrap">
+                                        <h6>Даты</h6>
+                                        <div class="include__wrap">
+                                            <div class="include__row">
+                                                <pre class="left">Получено:   </pre><p>28.09.2018, 16:32</p>
+                                            </div>
+                                            <div class="include__row">
+                                                <pre class="left">Изменено:   </pre><p>28.09.2018, 16:56</p>
+                                            </div>
+                                            <div class="include__row">
+                                                <pre class="left">Закрыто:    </pre><p>28.09.2018, 17:20</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="details-bottom__wrap">
+                                            <h6>Объект</h6>
+                                            <div class="include__wrap"> 
+                                                <div class="include__row">
+                                                    <pre class="left">Хост:      </pre><p>p00pgudb03.00.egov.local</p>
+                                                </div>
+                                                <div class="include__row">
+                                                    <pre class="left">Адрес:     </pre><p>169.254.254.255</p>
+                                                </div>
+                                                <div class="include__row">
+                                                    <pre class="left">Класс:     </pre><p>Hydrogen</p>
+                                                </div>
+                                            </div>
+                                            <div class="include__wrap">
+                                                <div class="include__row">
+                                                    <pre class="left">Объект:    </pre><p>Lorem ipsum dolor sit amet,<br> 
+                                                        maeris elit nullam dioranite tir</p>
+                                                </div>
+                                                <div class="include__row">
+                                                    <pre class="left">Метрика:   </pre><p>Percent of memory available<br>
+                                                        for applications</p>
+                                                </div>
+                                            </div> 
+                                    </div>
+                                    <div class="details-bottom__wrap">
+                                            <h6>ITSM</h6>
+                                            <div class="include__wrap">
+                                                <div class="include__row">
+                                                    <pre class="left">Зона:       </pre><p>Зона влияния инцидента</p>
+                                                </div>
+                                                <div class="include__row">
+                                                    <pre class="left">Сервис:     </pre><p>СКУФ автотест</p>
+                                                </div>
+                                                <div class="include__row">
+                                                    <pre class="left">Категория:  </pre><p>Hydrogen</p>
+                                                </div>
+                                            </div>
+                                            <div class="include__wrap">
+                                                <div class="include__row">
+                                                   <pre class="left">№ инц.:     </pre><p>224689252156</p>
+                                                </div>
+                                                <div class="include__row">
+                                                    <pre class="left">Статус:     </pre><p>Hydrogen</p>
+                                                </div>
+                                            </div>
+                                    </div> 
+                                </div>
+                            </div>          
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    
+        </section>
+    </main>
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>

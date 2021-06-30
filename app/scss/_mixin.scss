@@ -1,0 +1,11 @@
+@mixin dfcb {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin dfrb {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

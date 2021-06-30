@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@@title</title>
+    <meta name="description" content="@@desc">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:regular,500" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/normalise.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+                <div class="header__container container-fluid">
+                    <div class="header__left">
+                        <button class="menu__button" onclick="myFunction()"><img src="img/menu-icon.svg" alt="Menu"></button>
+                        <nav aria-label="breadcrumb__nav">
+                            <ul class="breadcrumb">
+                                <li class="breadcrumb__item"><a href="#">Техпортал СКУФ</a></li>
+                                <li class="breadcrumb__item" aria-current="page">Панель событий</li>
+                            </ul>
+                        </nav>
+                    </div>
+                <div class="header__right">
+                    <form class="header__search-wrap" action="http://.../search/" target="_self">
+                        <input class="header__search" type="text" placeholder="Поиск" name="text" required autocomplete="on" target="touch">
+                        <input class="header__search-icon" type="image" src="img/search-icon.svg"/>
+                        <span><img class="header__arrow-icon" src="img/arrow_drop_down-icon.svg" alt="Arrow"></span>
+                        <select class="header__select-person">
+                            <option value="Платонова Людмила">Платонова Людмила</option>
+                            <option value="Платонова Ольга">Платонова Ольга</option>
+                            <option value="Платонова Руслана">Платонова Руслана</option>
+                        </select>
+                        <span class="header__select-arrow-icon"><img src="img/arrow_drop_down-icon.svg" alt="Arrow"></span>
+                    </form>
+                    <div class="header__button-wrap">
+                        <button class="search__button"><img src="img/search-icon.svg" alt="Icon"></button>
+                        <button class="select-person__button"><img class="user-profile" src="img/blank-user-profile.svg"/></button>
+                        <button class="layer__button"><img src="img/layer-icon.svg" alt="Icon"></button>
+                        <button class="fullscreen__button"><img src="img/fullscreen-icon.svg" alt="Icon"></button>
+                        <button class="power-settings__button"><img src="img/power-settings-icon.svg" alt="Icon"></button>
+                        
+                    </div>
+                </div>
+
+                </div>
+    </header>
